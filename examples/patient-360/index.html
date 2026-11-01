@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2026 深圳市坐标软件集团有限公司
+  Shenzhen Coordinate Software Group Co., Ltd. · https://www.cnhis.com
+
+  SPDX-License-Identifier: Apache-2.0
+  Licensed under the Apache License, Version 2.0. See LICENSE and NOTICE.
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>患者 360 视图 · iHealthOne OS 示例</title>
+<style>
+  :root {
+    --blue: #1f6feb;
+    --blue-dark: #0b3f8f;
+    --ink: #16233a;
+    --muted: #6b7c95;
+    --line: #e4ebf5;
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --red: #e5484d;
+    --amber: #d97706;
+    --green: #12a594;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 14px/1.65 "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  }
+  header {
+    background: linear-gradient(120deg, #0b3f8f, #1f6feb 55%, #35a7e0);
+    color: #fff; padding: 18px 32px; display: flex; align-items: center; gap: 14px;
+  }
+  header .mark {
+    width: 34px; height: 34px; border-radius: 10px; background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.45); display: grid; place-items: center; font-size: 18px;
+  }
+  header h1 { font-size: 16px; margin: 0; font-weight: 600; letter-spacing: .5px; }
+  header .sub { font-size: 12px; opacity: .82; margin-left: auto; }
+  main { max-width: 1120px; margin: 22px auto 60px; padding: 0 20px; display: grid; gap: 16px; }
+  .grid2 { display: grid; grid-template-columns: 340px 1fr; gap: 16px; align-items: start; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .card h2 {
+    font-size: 13px; font-weight: 600; margin: 0; padding: 12px 16px;
+    border-bottom: 1px solid var(--line); color: var(--muted); letter-spacing: .6px;
+  }
+  .card .body { padding: 14px 16px; }
+  .avatar {
+    width: 52px; height: 52px; border-radius: 50%; background: #eaf2ff; color: var(--blue);
+    display: grid; place-items: center; font-size: 18px; font-weight: 600;
+  }
+  .person { display: flex; gap: 12px; align-items: center; }
+  .person .name { font-size: 17px; font-weight: 600; }
+  .person .meta { font-size: 12px; color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 20px; background: #eef4ff; color: var(--blue); }
+  .tag.warn { background: #fff4e5; color: var(--amber); }
+  .tag.danger { background: #fdecec; color: var(--red); }
+  dl.kv { display: grid; grid-template-columns: 84px 1fr; gap: 8px 10px; margin: 14px 0 0; }
+  dl.kv dt { color: var(--muted); font-size: 13px; }
+  dl.kv dd { margin: 0; font-size: 13px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .stat .n { font-size: 22px; font-weight: 700; color: var(--blue-dark); }
+  .stat .l { font-size: 12px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 9px 16px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; background: #fafcff; }
+  tr:last-child td { border-bottom: none; }
+  .flag { font-weight: 600; color: var(--red); }
+  .flag.N { color: var(--green); }
+  .pill { font-size: 11px; padding: 1px 7px; border-radius: 6px; background: #eef4ff; color: var(--blue); }
+  .loading { color: var(--muted); padding: 24px; text-align: center; }
+  footer { text-align: center; font-size: 12px; color: var(--muted); padding: 8px 0 0; }
+  footer a { color: var(--blue); text-decoration: none; }
+  @media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<header>
+  <div class="mark">＋</div>
+  <h1>iHealthOne OS · 患者 360 视图</h1>
+  <div class="sub">示例页面 · 数据为虚构测试数据 · www.cnhis.com</div>
+</header>
+
+<main>
+  <div class="stats" id="stats">
+    <div class="stat"><div class="n">—</div><div class="l">就诊次数</div></div>
+    <div class="stat"><div class="n">—</div><div class="l">过敏项</div></div>
+    <div class="stat"><div class="n">—</div><div class="l">异常检验</div></div>
+    <div class="stat"><div class="n">—</div><div class="l">慢病标签</div></div>
+  </div>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>基本信息</h2>
+      <div class="body" id="profile"><div class="loading">加载中…</div></div>
+    </section>
+
+    <section class="card">
+      <h2>检验结果</h2>
+      <div id="labs"><div class="loading">加载中…</div></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>就诊记录</h2>
+    <div id="encounters"><div class="loading">加载中…</div></div>
+  </section>
+
+  <footer>
+    © 深圳市坐标软件集团有限公司 · <a href="https://www.cnhis.com">www.cnhis.com</a>
+  </footer>
+</main>
+
+<script>
+const PATIENT_ID = new URLSearchParams(location.search).get('id') || 'MZ00000143';
+const API = `${location.origin}/api/v1/patients/${encodeURIComponent(PATIENT_ID)}`;
+
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+fetch(API)
+  .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(render)
+  .catch((err) => {
+    document.getElementById('profile').innerHTML =
+      `<div class="loading">接口未就绪：${esc(err.message)}<br/>请先运行 <code>node mock-server/index.js</code></div>`;
+  });
+
+function render(p) {
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="n">${p.encounters.length}</div><div class="l">就诊次数</div></div>
+    <div class="stat"><div class="n" style="color:var(--red)">${p.allergies.length}</div><div class="l">过敏项</div></div>
+    <div class="stat"><div class="n" style="color:var(--amber)">${p.labResults.filter(l => l.flag !== 'N').length}</div><div class="l">异常检验</div></div>
+    <div class="stat"><div class="n">${p.chronicConditions.length}</div><div class="l">慢病标签</div></div>`;
+
+  document.getElementById('profile').innerHTML = `
+    <div class="person">
+      <div class="avatar">${esc(p.name.slice(0, 1))}</div>
+      <div>
+        <div class="name">${esc(p.name)} <span class="pill">${esc(p.gender)} ${esc(p.age)}岁</span></div>
+        <div class="meta">${esc(p.patientId)} · 就诊卡 ${esc(p.mrn)}</div>
+      </div>
+    </div>
+    <div class="tags">
+      ${p.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}
+      ${p.allergies.map(a => `<span class="tag danger">${esc(a.allergen)}过敏</span>`).join('')}
+    </div>
+    <dl class="kv">
+      <dt>医保类型</dt><dd>${esc(p.insuranceType || '—')}</dd>
+      <dt>会员等级</dt><dd>${esc(p.vipLevel || '—')}</dd>
+      <dt>身高体重</dt><dd>${esc(p.height)} cm / ${esc(p.weight)} kg</dd>
+      <dt>联系电话</dt><dd>${esc(p.phone || '—')}</dd>
+      <dt>慢病诊断</dt><dd>${esc(p.chronicConditions.join('、') || '无')}</dd>
+    </dl>`;
+
+  document.getElementById('labs').innerHTML = p.labResults.length
+    ? `<table>
+        <thead><tr><th>项目</th><th>结果</th><th>参考范围</th><th>时间</th></tr></thead>
+        <tbody>${p.labResults.map(l => `
+          <tr>
+            <td>${esc(l.item)}</td>
+            <td class="flag ${l.flag}">${esc(l.value)} ${esc(l.unit)} ${l.flag === 'N' ? '' : '↑'}</td>
+            <td style="color:var(--muted)">${esc(l.ref)}</td>
+            <td style="color:var(--muted)">${esc(l.time.slice(0, 16).replace('T', ' '))}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>`
+    : `<div class="loading">暂无检验结果</div>`;
+
+  document.getElementById('encounters').innerHTML = `
+    <table>
+      <thead><tr><th>就诊时间</th><th>类型</th><th>科室</th><th>医生</th><th>主诉</th><th>诊断</th></tr></thead>
+      <tbody>${p.encounters.map(e => `
+        <tr>
+          <td>${esc(e.visitTime.slice(0, 16).replace('T', ' '))}</td>
+          <td><span class="pill">${esc(e.visitType)}</span></td>
+          <td>${esc(e.dept)}</td>
+          <td>${esc(e.doctor)}</td>
+          <td style="color:var(--muted)">${esc(e.chiefComplaint || '—')}</td>
+          <td>${esc(e.diagnosis.join('、'))}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+}
+</script>
+</body>
+</html>

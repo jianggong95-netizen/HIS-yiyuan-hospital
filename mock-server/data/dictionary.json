@@ -1,0 +1,54 @@
+{
+  "drugs": [
+    {
+      "code": "D0001",
+      "name": "复方氨酚烷胺片",
+      "spec": "10mg*30片/盒",
+      "unit": "片",
+      "maxDose": 2,
+      "allergen": null,
+      "insurance": "甲类"
+    },
+    {
+      "code": "D0002",
+      "name": "阿莫西林胶囊",
+      "spec": "0.25g*24粒/盒",
+      "unit": "粒",
+      "maxDose": 2,
+      "allergen": "青霉素",
+      "insurance": "甲类"
+    },
+    {
+      "code": "D0003",
+      "name": "苯磺酸氨氯地平片",
+      "spec": "5mg*7片/盒",
+      "unit": "片",
+      "maxDose": 1,
+      "allergen": null,
+      "insurance": "甲类"
+    },
+    {
+      "code": "D0004",
+      "name": "头孢克肟分散片",
+      "spec": "0.1g*12片/盒",
+      "unit": "片",
+      "maxDose": 2,
+      "allergen": "头孢类",
+      "insurance": "乙类"
+    }
+  ],
+  "queue": [
+    {
+      "deptCode": "DEPT-RESP",
+      "deptName": "呼吸内科",
+      "calling": { "queueNo": "A025", "room": "2 号诊室", "doctor": "马利哲" },
+      "waiting": 7,
+      "avgWaitMinutes": 11,
+      "items": [
+        { "queueNo": "A026", "patientId": "MZ00000144", "status": "NEXT" },
+        { "queueNo": "A027", "patientId": "MZ00000145", "status": "WAITING" },
+        { "queueNo": "A028", "patientId": "MZ00000146", "status": "WAITING" }
+      ]
+    }
+  ]
+}

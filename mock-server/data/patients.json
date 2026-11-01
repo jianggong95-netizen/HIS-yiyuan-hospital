@@ -1,0 +1,103 @@
+[
+  {
+    "patientId": "MZ00000143",
+    "mrn": "0101019900307258",
+    "name": "李依依",
+    "gender": "女",
+    "age": 33,
+    "birthDate": "1993-03-12",
+    "phone": "136****7896",
+    "idCardType": "居民身份证",
+    "insuranceType": "城镇职工基本医疗保险",
+    "vipLevel": "VIP金卡",
+    "bloodType": "A",
+    "height": 166,
+    "weight": 59,
+    "allergies": [
+      { "allergen": "青霉素", "reaction": "皮疹", "level": "重度" },
+      { "allergen": "磺胺类", "reaction": "恶心、呕吐", "level": "中度" }
+    ],
+    "chronicConditions": ["原发性高血压 2 级"],
+    "tags": ["慢病随访", "高血压专案"],
+    "lastVisit": {
+      "encounterId": "E20261101003",
+      "visitTime": "2026-11-01T09:55:00+08:00",
+      "dept": "呼吸内科",
+      "doctor": "马利哲",
+      "diagnosis": ["急性上呼吸道感染", "原发性高血压"]
+    },
+    "encounters": [
+      {
+        "encounterId": "E20261101003",
+        "visitType": "门诊",
+        "visitTime": "2026-11-01T09:55:00+08:00",
+        "dept": "呼吸内科",
+        "doctor": "马利哲",
+        "chiefComplaint": "咽痛、流涕 3 天，伴低热",
+        "diagnosis": ["急性上呼吸道感染", "原发性高血压"],
+        "orders": [
+          { "type": "药品", "name": "复方氨酚烷胺片", "spec": "10mg*30片/盒", "dose": "1片", "freq": "每日3次", "days": 5, "amount": 23.0 }
+        ]
+      },
+      {
+        "encounterId": "E20260618021",
+        "visitType": "门诊",
+        "visitTime": "2026-06-18T14:20:00+08:00",
+        "dept": "心血管内科",
+        "doctor": "陈颖欣",
+        "chiefComplaint": "血压控制不佳复诊",
+        "diagnosis": ["原发性高血压 2 级"],
+        "orders": [
+          { "type": "药品", "name": "苯磺酸氨氯地平片", "spec": "5mg*7片/盒", "dose": "1片", "freq": "每日1次", "days": 28, "amount": 46.0 }
+        ]
+      }
+    ],
+    "labResults": [
+      { "item": "白细胞计数", "value": "9.8", "unit": "10^9/L", "ref": "3.5-9.5", "flag": "H", "time": "2026-11-01T10:20:00+08:00" },
+      { "item": "中性粒细胞百分比", "value": "78.2", "unit": "%", "ref": "40-75", "flag": "H", "time": "2026-11-01T10:20:00+08:00" },
+      { "item": "C 反应蛋白", "value": "12.4", "unit": "mg/L", "ref": "0-8", "flag": "H", "time": "2026-11-01T10:20:00+08:00" }
+    ]
+  },
+  {
+    "patientId": "MZ00000144",
+    "mrn": "0101019851104032",
+    "name": "张强",
+    "gender": "男",
+    "age": 41,
+    "birthDate": "1985-01-10",
+    "phone": "139****2210",
+    "allergies": [],
+    "chronicConditions": ["2 型糖尿病"],
+    "tags": ["糖尿病专案"],
+    "lastVisit": {
+      "encounterId": "E20261101004",
+      "visitTime": "2026-11-01T10:32:00+08:00",
+      "dept": "内分泌科",
+      "doctor": "马利哲",
+      "diagnosis": ["2 型糖尿病"]
+    },
+    "encounters": [],
+    "labResults": []
+  },
+  {
+    "patientId": "MZ00000145",
+    "mrn": "0101019780622015",
+    "name": "陈青青",
+    "gender": "女",
+    "age": 48,
+    "birthDate": "1978-06-22",
+    "phone": "137****5566",
+    "allergies": [{ "allergen": "头孢类", "reaction": "皮疹", "level": "中度" }],
+    "chronicConditions": ["慢性胃炎"],
+    "tags": [],
+    "lastVisit": {
+      "encounterId": "E20261101005",
+      "visitTime": "2026-11-01T11:10:00+08:00",
+      "dept": "消化内科",
+      "doctor": "马利哲",
+      "diagnosis": ["慢性胃炎"]
+    },
+    "encounters": [],
+    "labResults": []
+  }
+]

@@ -1,0 +1,38 @@
+# 依赖
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+
+# 构建产物
+dist/
+build/
+out/
+*.tgz
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+tmp/
+coverage/
+
+# 环境与密钥（严禁提交）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# 编辑器
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# 院内配置（严禁提交）
+config/local/
+config/prod/
+*.hospital.local.json

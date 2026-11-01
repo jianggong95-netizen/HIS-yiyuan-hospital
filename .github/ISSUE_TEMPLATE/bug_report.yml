@@ -1,0 +1,50 @@
+name: 🐛 文档 / 示例问题
+description: 报告文档错误、示例跑不通、链接失效
+title: "[docs] "
+labels: ["documentation", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请**不要**在本表单中填写任何真实患者信息、院内 IP、密钥。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 文档错别字 / 表述不清
+        - 示例代码跑不通
+        - 链接失效 / 图片缺失
+        - 接口说明与实际不符
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 涉及文件
+      placeholder: 例如 docs/quickstart.md
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: 期望 vs 实际
+      value: |
+        **期望：**
+
+        **实际：**
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: 环境信息
+      placeholder: 操作系统 / Node 版本 / 浏览器
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认内容不含患者隐私与生产密钥
+          required: true

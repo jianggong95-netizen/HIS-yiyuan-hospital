@@ -1,0 +1,30 @@
+iHealthOne OS · 医疗中台操作系统
+Healthcare Middle Platform
+
+Copyright 2026 深圳市坐标软件集团有限公司
+Shenzhen Coordinate Software Group Co., Ltd.
+https://www.cnhis.com
+
+This product includes software developed at
+Shenzhen Coordinate Software Group Co., Ltd. (https://www.cnhis.com).
+
+--------------------------------------------------------------------
+第三方组件 / Third-party components
+
+本仓库的演示代码（packages/、mock-server/、examples/、deploy/）不含任何
+第三方运行时依赖，仅使用运行时内置能力，可直接以 Apache License 2.0 再分发。
+
+生产版本所使用的第三方组件及其许可证清单，随商业交付包单独提供。
+
+--------------------------------------------------------------------
+商标 / Trademarks
+
+"坐标软件"、"iHealthOne"、"iHealthOne OS"、"坐标 HIS"、"坐标云 HIS"
+及相关徽标（assets/logo.svg、assets/banner.svg、assets/social-preview.*）
+为深圳市坐标软件集团有限公司的商标或商业标识，不属于 Apache License 2.0
+的授权范围（见 LICENSE 第 6 条）。转载、再分发本仓库时须保留上述声明，
+但不得暗示获得商标使用许可或官方背书。
+
+产品界面截图（assets/workstation.png、assets/ecosystem.png、
+assets/mobile.png、assets/cloud-platform.png）用于说明产品功能，
+版权归本公司所有；引用时请注明出处与官网 www.cnhis.com。

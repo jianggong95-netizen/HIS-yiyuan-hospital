@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 商务咨询 / 方案与报价
+    url: https://www.cnhis.com
+    about: 官网提交需求，属地团队会在 1 个工作日内联系
+  - name: 技术文档
+    url: https://github.com/jianggong95-netizen/ihealthone-os/tree/main/docs
+    about: 快速开始、接口说明、部署与常见问题
+  - name: 安全漏洞
+    url: https://github.com/jianggong95-netizen/ihealthone-os/blob/main/SECURITY.md
+    about: 请勿公开提 Issue，按安全策略私下联系

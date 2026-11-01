@@ -1,0 +1,47 @@
+name: 💡 需求 / 对接咨询
+description: 提出功能需求、接口建议，或咨询对接方案
+title: "[req] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        想了解报价、实施周期、参观样板医院？请直接走官网 [www.cnhis.com](https://www.cnhis.com)，
+        Issue 更适合技术讨论。
+  - type: dropdown
+    id: type
+    attributes:
+      label: 类型
+      options:
+        - 功能需求
+        - 接口 / 字段建议
+        - 系统对接咨询
+        - 信创适配咨询
+        - 分级评价 / 测评支撑
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 业务场景
+      description: 你现在怎么做？希望变成什么样？
+      placeholder: 例如：门诊药房目前人工核对配伍，希望在下单时自动拦截并提示替代方案。
+    validations:
+      required: true
+  - type: input
+    id: scale
+    attributes:
+      label: 医院规模（可选）
+      placeholder: 例如：800 床三级综合 / 3 个院区
+  - type: textarea
+    id: systems
+    attributes:
+      label: 现有系统构成（可选）
+      placeholder: 例如：HIS 为某厂商单体系统，LIS 独立，已有集成平台
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认内容不含患者隐私与生产密钥
+          required: true
