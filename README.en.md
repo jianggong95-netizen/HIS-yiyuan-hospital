@@ -88,63 +88,6 @@ Hospitals can roll out microservices **department by department, campus by campu
 | 🛡 | **On-premise first** | Fully offline-capable deployment; adapted to Xinchuang (domestic) stacks — Kylin / UOS, DM8 / KingbaseES, Kunpeng |
 | ⏱ | **24/7 support** | On-site teams in major cities, 30-minute response for critical incidents |
 
-## Capability map
-
-```mermaid
-flowchart LR
-    subgraph Clinical["Clinical"]
-        A1["Outpatient / ED workstation"]
-        A2["Inpatient & nursing station"]
-        A3["EMR"]
-        A4["Clinical pathways"]
-        A5["CDSS"]
-        A6["Medication safety / prescription review"]
-    end
-
-    subgraph Ancillary["Ancillary & platform departments"]
-        B1["LIS"]
-        B2["PACS"]
-        B3["ECG network"]
-        B4["Anaesthesia & OR"]
-        B5["IV admixture (PIVAS)"]
-        B6["Blood transfusion"]
-    end
-
-    subgraph Ops["Operations & supply chain"]
-        C1["HIS core / billing"]
-        C2["HRP supply chain"]
-        C3["Performance management"]
-        C4["DRG / DIP"]
-        C5["Medical records & HQMS"]
-        C6["Executive dashboard / BI"]
-    end
-
-    subgraph Connect["Internet & regional"]
-        D1["Internet hospital"]
-        D2["Patient portal (WeChat)"]
-        D3["Medical consortium"]
-        D4["Electronic health card"]
-        D5["Tele-consultation / teleradiology"]
-        D6["Online payment & insurance settlement"]
-    end
-
-    subgraph Platform["HIS-yiyuan-hospital middle platform"]
-        E1["EMPI"]
-        E2["CDR"]
-        E3["Master data"]
-        E4["Integration engine"]
-        E5["SSO & permissions"]
-        E6["Event bus"]
-        E7["Rule engine"]
-        E8["Analytics & metrics"]
-    end
-
-    Clinical --> Platform
-    Ancillary --> Platform
-    Ops --> Platform
-    Connect --> Platform
-```
-
 ## Product line
 
 | Product | Positioning | Typical use |
