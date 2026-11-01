@@ -1,7 +1,7 @@
 {
-  "name": "@ihealthone/sdk",
+  "name": "@his-yiyuan-hospital/sdk",
   "version": "2.6.0-preview.3",
-  "description": "iHealthOne OS 开放平台 JavaScript / TypeScript SDK（演示版）",
+  "description": "HIS-yiyuan-hospital 开放平台 JavaScript / TypeScript SDK（演示版）",
   "license": "Apache-2.0",
   "author": "Shenzhen Coordinate Software Group Co., Ltd. <https://www.cnhis.com>",
   "type": "module",
@@ -18,11 +18,11 @@
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch"
   },
-  "keywords": ["his", "emr", "healthcare", "hospital", "ihealthone", "坐标软件"],
+  "keywords": ["his", "emr", "healthcare", "hospital", "his-yiyuan-hospital", "坐标软件"],
   "homepage": "https://www.cnhis.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jianggong95-netizen/ihealthone-os.git"
+    "url": "https://github.com/jianggong95-netizen/HIS-yiyuan-hospital.git"
   },
   "devDependencies": {
     "typescript": "^5.6.0"

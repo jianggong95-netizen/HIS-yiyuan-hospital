@@ -13,8 +13,8 @@
 ## 2. 启动演示网关
 
 ```bash
-git clone https://github.com/jianggong95-netizen/ihealthone-os.git
-cd ihealthone-os
+git clone https://github.com/jianggong95-netizen/HIS-yiyuan-hospital.git
+cd HIS-yiyuan-hospital
 
 # 方式一：Node 直接跑（零依赖）
 node mock-server/index.js
@@ -78,9 +78,9 @@ curl -X POST http://localhost:8787/api/v1/appointments \
 ## 4. 用命令行工具
 
 ```bash
-node packages/cli/bin/ih1.js doctor
-node packages/cli/bin/ih1.js patient 360 MZ00000143
-node packages/cli/bin/ih1.js queue DEPT-RESP
+node packages/cli/bin/his.js doctor
+node packages/cli/bin/his.js patient 360 MZ00000143
+node packages/cli/bin/his.js queue DEPT-RESP
 ```
 
 ## 5. 用 SDK
@@ -92,9 +92,9 @@ npm run build
 ```
 
 ```ts
-import { IHealthOneClient } from '@ihealthone/sdk';
+import { HisYiyuanHospitalClient } from '@his-yiyuan-hospital/sdk';
 
-const client = new IHealthOneClient({
+const client = new HisYiyuanHospitalClient({
   baseUrl: 'http://localhost:8787',
   appId: 'demo-app',
   appSecret: 'demo-secret',

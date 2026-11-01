@@ -27,9 +27,9 @@ export class HttpClient {
     this.headers = {
       'Content-Type': 'application/json',
       Accept: 'application/json',
-      'X-IH1-AppId': options.appId,
-      // 真实环境：Authorization = IH1-Sign <appId>:<nonce>:<timestamp>:<signature>
-      Authorization: `IH1-Demo ${options.appId}:${options.appSecret}`,
+      'X-HIS-AppId': options.appId,
+      // 真实环境：Authorization = HIS-Sign <appId>:<nonce>:<timestamp>:<signature>
+      Authorization: `HIS-Demo ${options.appId}:${options.appSecret}`,
       ...options.headers,
     };
   }

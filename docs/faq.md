@@ -6,7 +6,7 @@
 
 **代码是开源的**，采用 [Apache License 2.0](../LICENSE)：可以自由使用、修改、分发，也可以商用，只需保留 `LICENSE` 与 `NOTICE` 中的版权声明。
 
-但它同时是坐标软件集团的**产品演示与能力展示仓库**：`packages/`、`mock-server/`、`examples/` 是示例 / 占位实现，用于让医院信息科、集成商、合作伙伴快速了解 iHealthOne OS 的能力边界与接口形态。
+但它同时是坐标软件集团的**产品演示与能力展示仓库**：`packages/`、`mock-server/`、`examples/` 是示例 / 占位实现，用于让医院信息科、集成商、合作伙伴快速了解 HIS-yiyuan-hospital 的能力边界与接口形态。
 
 需要区分两件事：
 
@@ -31,7 +31,7 @@
 
 ### Q5：和传统 HIS 厂商的关系是替代还是共存？
 
-共存优先。iHealthOne OS 通过集成平台与院内既有系统对接（HL7 / WebService / REST / 数据库视图），可以先上中台与 CDR，再逐步替换业务模块。绝大多数客户是**分批上线**，不做一次性整体切换。
+共存优先。HIS-yiyuan-hospital 通过集成平台与院内既有系统对接（HL7 / WebService / REST / 数据库视图），可以先上中台与 CDR，再逐步替换业务模块。绝大多数客户是**分批上线**，不做一次性整体切换。
 
 ### Q6：能支撑多院区 / 医共体吗？
 
@@ -82,7 +82,7 @@ netstat -ano | findstr 8787   # Windows
 ## 没找到答案？
 
 - 官网在线咨询：[www.cnhis.com](https://www.cnhis.com)
-- 在本仓库提 [Issue](https://github.com/jianggong95-netizen/ihealthone-os/issues/new/choose)，注明单位与场景，我们会安排属地团队回复。
+- 在本仓库提 [Issue](https://github.com/jianggong95-netizen/HIS-yiyuan-hospital/issues/new/choose)，注明单位与场景，我们会安排属地团队回复。
 
 ---
 

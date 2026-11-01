@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
  * Licensed under the Apache License, Version 2.0. See LICENSE and NOTICE.
  */
-/** iHealthOne OS 开放平台 —— 通用类型定义（演示版） */
+/** HIS-yiyuan-hospital 开放平台 —— 通用类型定义（演示版） */
 
 export interface ClientOptions {
   /** 网关地址，例如 https://open.example-hospital.cn */

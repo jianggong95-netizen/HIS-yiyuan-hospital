@@ -7,19 +7,19 @@
  * Licensed under the Apache License, Version 2.0. See LICENSE and NOTICE.
  */
 /**
- * ih1 —— iHealthOne OS 命令行工具（演示版，零依赖）
+ * his —— HIS-yiyuan-hospital 命令行工具（演示版，零依赖）
  *
  * 用法：
- *   ih1 doctor                       检查配置与网关连通性
- *   ih1 patient 360 <patientId>      打印患者 360 摘要
- *   ih1 queue <deptCode>             打印排队叫号看板
- *   ih1 --version
+ *   his doctor                       检查配置与网关连通性
+ *   his patient 360 <patientId>      打印患者 360 摘要
+ *   his queue <deptCode>             打印排队叫号看板
+ *   his --version
  */
 'use strict';
 
 const VERSION = '2.6.0-preview.3';
-const BASE = process.env.IH1_BASE_URL || 'http://localhost:8787';
-const APP_ID = process.env.IH1_APP_ID || 'demo-app';
+const BASE = process.env.HIS_BASE_URL || 'http://localhost:8787';
+const APP_ID = process.env.HIS_APP_ID || 'demo-app';
 
 const C = {
   reset: '\u001b[0m',
@@ -34,13 +34,13 @@ const C = {
 const line = (label, value) => console.log(`  ${C.dim}${label.padEnd(14)}${C.reset}${value}`);
 
 async function getJson(path) {
-  const res = await fetch(`${BASE}${path}`, { headers: { 'X-IH1-AppId': APP_ID } });
+  const res = await fetch(`${BASE}${path}`, { headers: { 'X-HIS-AppId': APP_ID } });
   if (!res.ok) throw new Error(`${res.status} ${res.statusText} ${path}`);
   return res.json();
 }
 
 async function cmdDoctor() {
-  console.log(`${C.bold}iHealthOne CLI ${VERSION}${C.reset}`);
+  console.log(`${C.bold}HIS-yiyuan-hospital CLI ${VERSION}${C.reset}`);
   line('网关地址', BASE);
   line('应用 ID', APP_ID);
   line('Node', process.version);
@@ -58,7 +58,7 @@ async function cmdDoctor() {
 }
 
 async function cmdPatient360(id) {
-  if (!id) throw new Error('缺少 patientId，例如 ih1 patient 360 MZ00000143');
+  if (!id) throw new Error('缺少 patientId，例如 his patient 360 MZ00000143');
   const p = await getJson(`/api/v1/patients/${encodeURIComponent(id)}`);
   console.log(`${C.bold}${p.name}${C.reset}  ${p.gender} / ${p.age}岁  ${C.dim}${p.patientId}${C.reset}`);
   line('就诊卡号', p.mrn);
@@ -91,15 +91,15 @@ async function main() {
   const [cmd, sub, arg] = process.argv.slice(2);
 
   if (!cmd || cmd === 'help' || cmd === '--help' || cmd === '-h') {
-    console.log(`iHealthOne CLI ${VERSION}
+    console.log(`HIS-yiyuan-hospital CLI ${VERSION}
 
-  ih1 doctor                    检查配置与网关连通性
-  ih1 patient 360 <patientId>   打印患者 360 摘要
-  ih1 queue [deptCode]          打印排队叫号看板
+  his doctor                    检查配置与网关连通性
+  his patient 360 <patientId>   打印患者 360 摘要
+  his queue [deptCode]          打印排队叫号看板
 
 环境变量：
-  IH1_BASE_URL   网关地址，默认 http://localhost:8787
-  IH1_APP_ID     应用 ID，默认 demo-app
+  HIS_BASE_URL   网关地址，默认 http://localhost:8787
+  HIS_APP_ID     应用 ID，默认 demo-app
 
 官网：https://www.cnhis.com`);
     return;

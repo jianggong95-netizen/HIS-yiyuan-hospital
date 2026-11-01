@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="iHealthOne OS · Healthcare Middle Platform" width="100%" />
+  <img src="./assets/banner.svg" alt="HIS-yiyuan-hospital · Healthcare Middle Platform" width="100%" />
 </div>
 
 <p align="center">
   <a href="./README.md">简体中文</a> · <b>English</b>
 </p>
 
-<h1 align="center">iHealthOne OS · Healthcare Middle Platform</h1>
+<h1 align="center">HIS-yiyuan-hospital · Healthcare Middle Platform</h1>
 
 <p align="center">
   A unified information backbone for secondary / tertiary hospitals, medical groups and regional health consortia.<br/>
@@ -39,7 +39,7 @@
 
 ## What this is
 
-**iHealthOne OS** is a healthcare middle platform built in-house by Coordinate Software Group. It replaces the classic "one system per department, one integration rewrite per connection" model with **a shared platform plus composable microservice applications**:
+**HIS-yiyuan-hospital** is a healthcare middle platform built in-house by Coordinate Software Group. It replaces the classic "one system per department, one integration rewrite per connection" model with **a shared platform plus composable microservice applications**:
 
 - **One patient index (EMPI)** — outpatient, inpatient, check-up and internet hospital all see the same person
 - **One clinical data repository (CDR)** — records, orders, labs, imaging and ECG archived and retrievable in one place
@@ -49,7 +49,7 @@
 Hospitals can roll out microservices **department by department, campus by campus** instead of a multi-month big-bang cutover.
 
 <div align="center">
-  <img src="./assets/ecosystem.png" alt="iHealthOne OS application landscape" width="92%" />
+  <img src="./assets/ecosystem.png" alt="HIS-yiyuan-hospital application landscape" width="92%" />
   <sub>Microservice applications covering the full clinical and operational landscape</sub>
 </div>
 
@@ -126,7 +126,7 @@ flowchart LR
         D6["Online payment & insurance settlement"]
     end
 
-    subgraph Platform["iHealthOne OS middle platform"]
+    subgraph Platform["HIS-yiyuan-hospital middle platform"]
         E1["EMPI"]
         E2["CDR"]
         E3["Master data"]
@@ -149,7 +149,7 @@ flowchart LR
 |---|---|---|
 | **Coordinate HIS** | Hospital core system | Registration, billing, orders, inpatient settlement, pharmacy |
 | **Coordinate Cloud HIS** | Cloud / SaaS core | Fast go-live for secondary, specialty hospitals and clinic chains |
-| **iHealthOne OS** | Healthcare middle platform | System integration, data governance, group-wide backbone |
+| **HIS-yiyuan-hospital** | Healthcare middle platform | System integration, data governance, group-wide backbone |
 | **Coordinate EMR** | Electronic medical record | Structured records, templates, in-process QC, paperless archiving |
 | **Coordinate Internet Hospital** | Online-offline integration | Consultation, refill prescriptions, drug delivery, online payment |
 | **Coordinate CRM** | Patient relationship | Appointments, follow-up, chronic disease, membership |
@@ -215,7 +215,7 @@ flowchart TB
 ## Repository layout
 
 ```text
-ihealthone-os/
+HIS-yiyuan-hospital/
 ├── assets/                     # Brand and product screenshots
 ├── docs/                       # Documentation
 │   ├── quickstart.md           # Run the demo in 10 minutes
@@ -227,7 +227,7 @@ ihealthone-os/
 │   └── api/README.md           # Open API reference
 ├── packages/
 │   ├── sdk-js/                 # JavaScript / TypeScript SDK
-│   └── cli/                    # ih1 command-line tool
+│   └── cli/                    # his command-line tool
 ├── mock-server/                # Zero-dependency demo gateway
 ├── examples/
 │   ├── patient-360/            # Patient 360 demo page
@@ -244,8 +244,8 @@ ihealthone-os/
 ### Option 1 — Docker
 
 ```bash
-git clone https://github.com/jianggong95-netizen/ihealthone-os.git
-cd ihealthone-os
+git clone https://github.com/jianggong95-netizen/HIS-yiyuan-hospital.git
+cd HIS-yiyuan-hospital
 docker compose up -d
 # open http://localhost:8787  → demo page + mock open API
 ```
@@ -254,23 +254,23 @@ docker compose up -d
 
 ```bash
 node mock-server/index.js
-# [iHealthOne] mock gateway listening on http://localhost:8787
+# [HIS-yiyuan-hospital] mock gateway listening on http://localhost:8787
 curl http://localhost:8787/api/v1/patients/MZ00000143
 ```
 
 ### Option 3 — Use the SDK
 
 ```bash
-npm i @ihealthone/sdk
+npm i @his-yiyuan-hospital/sdk
 ```
 
 ```ts
-import { IHealthOneClient } from '@ihealthone/sdk';
+import { HisYiyuanHospitalClient } from '@his-yiyuan-hospital/sdk';
 
-const client = new IHealthOneClient({
+const client = new HisYiyuanHospitalClient({
   baseUrl: 'https://open.example-hospital.cn',
   appId: 'demo-app',
-  appSecret: process.env.IH1_SECRET!,
+  appSecret: process.env.HIS_SECRET!,
 });
 
 // Patient 360: demographics, encounters, allergies, labs, medication
@@ -297,8 +297,8 @@ console.log(appt.queueNo, appt.room);
 CLI:
 
 ```bash
-npx @ihealthone/cli doctor          # health check for config and connectivity
-npx @ihealthone/cli patient 360 MZ00000143
+npx @his-yiyuan-hospital/cli doctor          # health check for config and connectivity
+npx @his-yiyuan-hospital/cli patient 360 MZ00000143
 ```
 
 See [docs/quickstart.md](./docs/quickstart.md) for the full walkthrough.
@@ -352,7 +352,7 @@ Details: [docs/roadmap.md](./docs/roadmap.md).
 | Channel | Detail |
 |---|---|
 | 🌐 Website | [www.cnhis.com](https://www.cnhis.com) |
-| 📮 Sales | Submit an enquiry via the website, or open an [issue](https://github.com/jianggong95-netizen/ihealthone-os/issues/new?template=feature_request.yml) |
+| 📮 Sales | Submit an enquiry via the website, or open an [issue](https://github.com/jianggong95-netizen/HIS-yiyuan-hospital/issues/new?template=feature_request.yml) |
 | 🤝 Partners | Regional system integrators and healthcare IT providers are welcome |
 | 💼 Careers | Engineering, implementation and pre-sales roles are open year-round |
 
@@ -366,7 +366,7 @@ Details: [docs/roadmap.md](./docs/roadmap.md).
 |---|---|
 | Code (`packages/`, `mock-server/`, `examples/`, `deploy/`, CI config) | Apache License 2.0 |
 | Documentation (`docs/`, READMEs) | Apache License 2.0 |
-| Product names and trademarks ("坐标软件", "iHealthOne", "Coordinate HIS"), logos `assets/logo.svg`, `assets/banner.svg`, `assets/social-preview.*` | **Not** covered by Apache-2.0 (see Section 6); reference is allowed, endorsement is not implied |
+| Product names and trademarks ("坐标软件", "HIS-yiyuan-hospital", "Coordinate HIS"), logos `assets/logo.svg`, `assets/banner.svg`, `assets/social-preview.*` | **Not** covered by Apache-2.0 (see Section 6); reference is allowed, endorsement is not implied |
 | Product screenshots `assets/*.png` | Copyright of the company; reuse with attribution |
 | The full product (production build, implementation and support) | Commercial licence — contact us via the website |
 

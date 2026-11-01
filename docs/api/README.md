@@ -7,11 +7,11 @@
 
 | 项 | 说明 |
 |---|---|
-| 传输头 | `X-IH1-AppId: <appId>` |
-| 签名头 | `Authorization: IH1-Sign <appId>:<nonce>:<timestamp>:<signature>` |
+| 传输头 | `X-HIS-AppId: <appId>` |
+| 签名头 | `Authorization: HIS-Sign <appId>:<nonce>:<timestamp>:<signature>` |
 | 签名算法 | `HMAC-SHA256(appSecret, appId + nonce + timestamp + body)`，小写十六进制 |
 | 时间窗 | ±5 分钟，超出拒绝 |
-| 幂等 | 写接口支持 `X-IH1-RequestId`，同 ID 24 小时内只生效一次 |
+| 幂等 | 写接口支持 `X-HIS-RequestId`，同 ID 24 小时内只生效一次 |
 
 ## 通用响应
 
@@ -93,7 +93,7 @@
 
 ```bash
 curl "http://localhost:8787/api/v1/patients/MZ00000143" \
-  -H "X-IH1-AppId: demo-app"
+  -H "X-HIS-AppId: demo-app"
 ```
 
 ```json

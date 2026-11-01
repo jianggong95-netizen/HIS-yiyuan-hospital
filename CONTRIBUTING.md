@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢关注 iHealthOne OS。本仓库是产品演示仓库，我们欢迎以下形式的参与。
+感谢关注 HIS-yiyuan-hospital。本仓库是产品演示仓库，我们欢迎以下形式的参与。
 
 ## 欢迎的贡献
 
@@ -24,7 +24,7 @@
 3. 提交前自查：
    ```bash
    node mock-server/index.js     # 演示环境可启动
-   node packages/cli/bin/ih1.js doctor
+   node packages/cli/bin/his.js doctor
    ```
 4. PR 描述里写清「改了什么 / 为什么 / 怎么验证」。
 

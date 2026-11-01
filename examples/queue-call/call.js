@@ -13,7 +13,7 @@
  */
 'use strict';
 
-const BASE = process.env.IH1_BASE_URL || 'http://localhost:8787';
+const BASE = process.env.HIS_BASE_URL || 'http://localhost:8787';
 const deptCode = process.argv[2] || 'DEPT-RESP';
 
 async function tick() {

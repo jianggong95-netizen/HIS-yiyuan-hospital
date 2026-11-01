@@ -14,14 +14,14 @@ import type { ClientOptions } from './types.js';
 export * from './types.js';
 
 /**
- * iHealthOne OS 开放平台客户端
+ * HIS-yiyuan-hospital 开放平台客户端
  *
  * ```ts
- * const client = new IHealthOneClient({ baseUrl, appId, appSecret });
+ * const client = new HisYiyuanHospitalClient({ baseUrl, appId, appSecret });
  * const patient = await client.patient.get360('MZ00000143');
  * ```
  */
-export class IHealthOneClient {
+export class HisYiyuanHospitalClient {
   readonly patient: PatientModule;
   readonly appointment: AppointmentModule;
   readonly cds: CdsModule;
@@ -34,4 +34,4 @@ export class IHealthOneClient {
   }
 }
 
-export default IHealthOneClient;
+export default HisYiyuanHospitalClient;

@@ -52,21 +52,21 @@ systemctl enable --now docker
 镜像由坐标软件交付团队提供（离线包 / 私有仓库），演示仓库不含生产镜像。
 
 ```bash
-docker load -i ih1-os-2.6.0.tar
-docker images | grep ih1
+docker load -i his-os-2.6.0.tar
+docker images | grep his
 ```
 
 ### 3. 配置
 
 ```yaml
-# /opt/ih1/config/app.yaml
+# /opt/his/config/app.yaml
 server:
   port: 8080
   context-path: /api
 
 datasource:
-  url: jdbc:mysql://10.10.1.11:3306/ih1?useUnicode=true&characterEncoding=utf8
-  username: ih1_app
+  url: jdbc:mysql://10.10.1.11:3306/his?useUnicode=true&characterEncoding=utf8
+  username: his_app
   password: ${DB_PASSWORD}     # 从环境变量或密钥管理服务读取
 
 redis:
@@ -84,17 +84,17 @@ empi:
 
 ```bash
 # 建库建表 + 基础字典
-./ih1-cli db init --config /opt/ih1/config/app.yaml
-./ih1-cli dict import --file ./dict/standard-2026.sql
+./his-cli db init --config /opt/his/config/app.yaml
+./his-cli dict import --file ./dict/standard-2026.sql
 
 # 初始化组织与院区
-./ih1-cli org create --code H001 --name "示例人民医院" --level 3
+./his-cli org create --code H001 --name "示例人民医院" --level 3
 ```
 
 ### 5. 启动
 
 ```bash
-docker compose -f /opt/ih1/docker-compose.prod.yml up -d
+docker compose -f /opt/his/docker-compose.prod.yml up -d
 docker compose ps
 curl http://127.0.0.1:8080/actuator/health
 ```

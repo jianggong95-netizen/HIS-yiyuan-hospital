@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="iHealthOne OS · 医疗中台操作系统" width="100%" />
+  <img src="./assets/banner.svg" alt="HIS-yiyuan-hospital · 医疗中台操作系统" width="100%" />
 </div>
 
 <p align="center">
   <b>简体中文</b> · <a href="./README.en.md">English</a>
 </p>
 
-<h1 align="center">iHealthOne OS · 医疗中台操作系统</h1>
+<h1 align="center">HIS-yiyuan-hospital · 医疗中台操作系统</h1>
 
 <p align="center">
   面向二级 / 三级医院、医共体与医疗集团的<strong>全院信息化一体化底座</strong><br/>
@@ -39,7 +39,7 @@
 
 ## 📌 这是什么
 
-**iHealthOne OS** 是坐标软件集团自研的医疗中台操作系统。它把 HIS 时代"一个科室一套系统、一次对接改一遍代码"的烟囱式建设方式，重构为**统一中台 + 微服务应用**的模式：
+**HIS-yiyuan-hospital** 是坐标软件集团自研的医疗中台操作系统。它把 HIS 时代"一个科室一套系统、一次对接改一遍代码"的烟囱式建设方式，重构为**统一中台 + 微服务应用**的模式：
 
 - **一个患者主索引（EMPI）**，门急诊、住院、体检、互联网医院看到的是同一个患者；
 - **一个临床数据中心（CDR）**，病历、医嘱、检验、检查、影像、心电统一归档与调阅；
@@ -49,7 +49,7 @@
 医院可以按科室、按院区、按业务域**逐个上线微服务应用**，而不必"停机三个月整体切换"。
 
 <div align="center">
-  <img src="./assets/ecosystem.png" alt="iHealthOne OS 应用全景" width="92%" />
+  <img src="./assets/ecosystem.png" alt="HIS-yiyuan-hospital 应用全景" width="92%" />
   <sub>各类微服务医疗应用，各种场景全面覆盖</sub>
 </div>
 
@@ -126,7 +126,7 @@ flowchart LR
         D6["在线支付 / 医保结算"]
     end
 
-    subgraph 中台["医疗中台 iHealthOne OS"]
+    subgraph 中台["医疗中台 HIS-yiyuan-hospital"]
         E1["患者主索引 EMPI"]
         E2["临床数据中心 CDR"]
         E3["主数据与字典"]
@@ -149,7 +149,7 @@ flowchart LR
 |---|---|---|
 | **坐标 HIS** | 全院核心业务系统 | 门急诊挂号收费、医嘱、住院结算、药房药库 |
 | **坐标云 HIS** | 云化 / SaaS 版核心 | 二级医院、专科医院、连锁诊所快速上线 |
-| **iHealthOne OS** | 医疗中台操作系统 | 多系统集成、数据治理、集团化统一底座 |
+| **HIS-yiyuan-hospital** | 医疗中台操作系统 | 多系统集成、数据治理、集团化统一底座 |
 | **坐标 EMR** | 电子病历与病历质控 | 结构化病历、模板库、环节质控、无纸化归档 |
 | **坐标互联网医院** | 线上线下一体化 | 图文问诊、复诊续方、药品配送、在线支付 |
 | **坐标 CRM** | 患者关系与随访 | 预约随访、慢病管理、会员与健康档案 |
@@ -215,7 +215,7 @@ flowchart TB
 ## 📦 仓库结构
 
 ```text
-ihealthone-os/
+HIS-yiyuan-hospital/
 ├── assets/                     # 品牌与界面素材
 ├── docs/                       # 文档中心
 │   ├── quickstart.md           # 10 分钟跑通演示环境
@@ -227,7 +227,7 @@ ihealthone-os/
 │   └── api/README.md           # 开放接口说明
 ├── packages/
 │   ├── sdk-js/                 # 开放平台 JavaScript / TypeScript SDK
-│   └── cli/                    # 命令行工具 ih1
+│   └── cli/                    # 命令行工具 his
 ├── mock-server/                # 演示用 Mock 网关（零依赖）
 ├── examples/
 │   ├── patient-360/            # 患者 360 视图示例
@@ -244,8 +244,8 @@ ihealthone-os/
 ### 方式一：Docker 一键启动演示环境
 
 ```bash
-git clone https://github.com/jianggong95-netizen/ihealthone-os.git
-cd ihealthone-os
+git clone https://github.com/jianggong95-netizen/HIS-yiyuan-hospital.git
+cd HIS-yiyuan-hospital
 docker compose up -d
 # 打开 http://localhost:8787        → 患者 360 示例页 + Mock 开放接口
 ```
@@ -254,23 +254,23 @@ docker compose up -d
 
 ```bash
 node mock-server/index.js
-# [iHealthOne] mock gateway listening on http://localhost:8787
+# [HIS-yiyuan-hospital] mock gateway listening on http://localhost:8787
 curl http://localhost:8787/api/v1/patients/MZ00000143
 ```
 
 ### 方式三：装 SDK，在自己的系统里调
 
 ```bash
-npm i @ihealthone/sdk
+npm i @his-yiyuan-hospital/sdk
 ```
 
 ```ts
-import { IHealthOneClient } from '@ihealthone/sdk';
+import { HisYiyuanHospitalClient } from '@his-yiyuan-hospital/sdk';
 
-const client = new IHealthOneClient({
+const client = new HisYiyuanHospitalClient({
   baseUrl: 'https://open.example-hospital.cn',
   appId: 'demo-app',
-  appSecret: process.env.IH1_SECRET!,
+  appSecret: process.env.HIS_SECRET!,
 });
 
 // 患者 360：一次拿到基本信息、就诊、过敏、检验检查、用药
@@ -297,8 +297,8 @@ console.log(appt.queueNo, appt.room);
 ### 命令行工具
 
 ```bash
-npx @ihealthone/cli doctor          # 体检：检查配置与网络连通性
-npx @ihealthone/cli patient 360 MZ00000143
+npx @his-yiyuan-hospital/cli doctor          # 体检：检查配置与网络连通性
+npx @his-yiyuan-hospital/cli patient 360 MZ00000143
 ```
 
 完整步骤见 [docs/quickstart.md](./docs/quickstart.md)。
@@ -352,7 +352,7 @@ npx @ihealthone/cli patient 360 MZ00000143
 | 渠道 | 信息 |
 |---|---|
 | 🌐 官方网站 | [www.cnhis.com](https://www.cnhis.com) |
-| 📮 商务咨询 | 请通过官网"联系我们"提交需求，或在本仓库提 [Issue](https://github.com/jianggong95-netizen/ihealthone-os/issues/new?template=feature_request.yml) |
+| 📮 商务咨询 | 请通过官网"联系我们"提交需求，或在本仓库提 [Issue](https://github.com/jianggong95-netizen/HIS-yiyuan-hospital/issues/new?template=feature_request.yml) |
 | 🤝 渠道 / 代理 | 欢迎区域集成商、医疗信息化服务商洽谈合作 |
 | 💼 人才招聘 | 研发、实施、售前岗位长期开放，简历请走官网投递 |
 
@@ -366,7 +366,7 @@ npx @ihealthone/cli patient 360 MZ00000143
 |---|---|
 | 代码（`packages/`、`mock-server/`、`examples/`、`deploy/`、CI 配置） | Apache License 2.0 |
 | 文档（`docs/`、README） | Apache License 2.0 |
-| 产品名称与商标（"坐标软件" / "iHealthOne" / "坐标 HIS"）、徽标 `assets/logo.svg`、`assets/banner.svg`、`assets/social-preview.*` | **不在** Apache-2.0 授权范围（见 LICENSE 第 6 条），可指明出处引用，不得暗示官方背书 |
+| 产品名称与商标（"坐标软件" / "HIS-yiyuan-hospital" / "坐标 HIS"）、徽标 `assets/logo.svg`、`assets/banner.svg`、`assets/social-preview.*` | **不在** Apache-2.0 授权范围（见 LICENSE 第 6 条），可指明出处引用，不得暗示官方背书 |
 | 产品界面截图 `assets/*.png` | 版权归本公司所有，引用请注明出处与官网 |
 | 完整产品（生产版本、实施与运维服务） | 商业授权，请联系官网 |
 

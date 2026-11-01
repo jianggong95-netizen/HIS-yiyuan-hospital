@@ -1,15 +1,15 @@
 {
-  "name": "@ihealthone/cli",
+  "name": "@his-yiyuan-hospital/cli",
   "version": "2.6.0-preview.3",
-  "description": "iHealthOne OS 命令行工具（演示版）",
+  "description": "HIS-yiyuan-hospital 命令行工具（演示版）",
   "license": "Apache-2.0",
   "author": "Shenzhen Coordinate Software Group Co., Ltd. <https://www.cnhis.com>",
   "type": "commonjs",
   "bin": {
-    "ih1": "./bin/ih1.js"
+    "his": "./bin/his.js"
   },
   "files": ["bin", "README.md"],
-  "keywords": ["his", "cli", "ihealthone", "坐标软件"],
+  "keywords": ["his", "cli", "his-yiyuan-hospital", "坐标软件"],
   "homepage": "https://www.cnhis.com",
   "engines": {
     "node": ">=18"

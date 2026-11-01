@@ -13,7 +13,7 @@
 
 ```bash
 node mock-server/index.js
-node packages/cli/bin/ih1.js doctor
+node packages/cli/bin/his.js doctor
 ```
 
 ## 自查

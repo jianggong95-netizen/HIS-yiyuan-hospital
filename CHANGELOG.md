@@ -7,7 +7,7 @@
 ### 新增
 - 患者 360 示例页 `examples/patient-360`，含检验异常高亮与就诊时间线
 - SDK 新增 `cds.checkPrescription()`，覆盖过敏 / 剂量校验
-- CLI 新增 `ih1 doctor` 环境自检命令
+- CLI 新增 `his doctor` 环境自检命令
 
 ### 变更
 - 仓库以 **Apache License 2.0** 开源，新增 `NOTICE`（版权归属 + 商标声明），源码文件补充 SPDX 头

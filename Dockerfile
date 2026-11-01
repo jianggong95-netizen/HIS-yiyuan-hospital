@@ -1,10 +1,10 @@
-# iHealthOne OS 演示网关镜像（仅用于本地演示）
+# HIS-yiyuan-hospital 演示网关镜像（仅用于本地演示）
 FROM node:20-alpine
 
-LABEL org.opencontainers.image.title="iHealthOne OS Mock Gateway" \
+LABEL org.opencontainers.image.title="HIS-yiyuan-hospital Mock Gateway" \
       org.opencontainers.image.vendor="Shenzhen Coordinate Software Group" \
       org.opencontainers.image.url="https://www.cnhis.com" \
-      org.opencontainers.image.description="Demo gateway for iHealthOne OS open API. Not for production use."
+      org.opencontainers.image.description="Demo gateway for HIS-yiyuan-hospital open API. Not for production use."
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ COPY examples/patient-360 ./examples/patient-360
 ENV PORT=8787
 EXPOSE 8787
 
-RUN addgroup -S ih1 && adduser -S ih1 -G ih1 && chown -R ih1:ih1 /app
-USER ih1
+RUN addgroup -S his && adduser -S his -G his && chown -R his:his /app
+USER his
 
 CMD ["node", "mock-server/index.js"]

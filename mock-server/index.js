@@ -7,7 +7,7 @@
  * Licensed under the Apache License, Version 2.0. See LICENSE and NOTICE.
  */
 /**
- * iHealthOne OS —— 演示用 Mock 网关
+ * HIS-yiyuan-hospital —— 演示用 Mock 网关
  * ------------------------------------------------------------
  * 零依赖，仅用于本地演示与接口联调，不包含任何生产逻辑。
  * 启动：node mock-server/index.js
@@ -46,7 +46,7 @@ const notFound = (res, message) => json(res, 404, { code: 'NOT_FOUND', message }
 const withCors = (res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization,X-IH1-AppId');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization,X-HIS-AppId');
 };
 
 const findPatient = (id) => patients.find((p) => p.patientId === id);
@@ -55,7 +55,7 @@ const routes = {
   'GET /health': (_req, res) => {
     json(res, 200, {
       status: 'UP',
-      service: 'ih1-mock-gateway',
+      service: 'his-mock-gateway',
       version: '2.6.0-preview',
       time: new Date().toISOString(),
     });
@@ -217,7 +217,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`[iHealthOne] mock gateway listening on http://localhost:${PORT}`);
-  console.log(`[iHealthOne] demo page:  http://localhost:${PORT}/`);
-  console.log(`[iHealthOne] api base:   http://localhost:${PORT}${API_PREFIX}`);
+  console.log(`[HIS-yiyuan-hospital] mock gateway listening on http://localhost:${PORT}`);
+  console.log(`[HIS-yiyuan-hospital] demo page:  http://localhost:${PORT}/`);
+  console.log(`[HIS-yiyuan-hospital] api base:   http://localhost:${PORT}${API_PREFIX}`);
 });
