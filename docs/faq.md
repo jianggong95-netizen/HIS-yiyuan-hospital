@@ -55,6 +55,8 @@
 
 ## 关于演示环境
 
+> 想直接看**真实产品**而不是本地 Mock？访问 <https://www.cnhis.com> 申请在线演示沙箱，我们会开通带真实模块的体验账号。
+
 ### Q11：`node mock-server/index.js` 起不来？
 
 ```bash

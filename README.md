@@ -48,9 +48,11 @@
 
 医院可以按科室、按院区、按业务域**逐个上线微服务应用**，而不必"停机三个月整体切换"。
 
+## 🗺 能力全景
+
 <div align="center">
-  <img src="./assets/ecosystem.png" alt="HIS-yiyuan-hospital 应用全景" width="92%" />
-  <sub>各类微服务医疗应用，各种场景全面覆盖</sub>
+  <img src="./assets/capability-map.svg" alt="HIS-yiyuan-hospital 能力全景：六大能力域与统一中台底座" width="100%" />
+  <sub>六大能力域 · 120+ 微服务应用 · 一套中台底座　|　在线体验与演示申请：<b><a href="https://www.cnhis.com">www.cnhis.com</a></b></sub>
 </div>
 
 ## 🖥 界面预览
@@ -268,7 +270,8 @@ npm i @his-yiyuan-hospital/sdk
 import { HisYiyuanHospitalClient } from '@his-yiyuan-hospital/sdk';
 
 const client = new HisYiyuanHospitalClient({
-  baseUrl: 'https://open.example-hospital.cn',
+  // 沙箱 / 正式网关地址：访问 www.cnhis.com 申请开通后分配
+  baseUrl: 'https://www.cnhis.com',
   appId: 'demo-app',
   appSecret: process.env.HIS_SECRET!,
 });
@@ -352,11 +355,12 @@ npx @his-yiyuan-hospital/cli patient 360 MZ00000143
 | 渠道 | 信息 |
 |---|---|
 | 🌐 官方网站 | [www.cnhis.com](https://www.cnhis.com) |
+| 🖥 在线体验 / 演示预约 | [www.cnhis.com](https://www.cnhis.com) —— 官网提交需求，安排线上演示或样板医院参观 |
 | 📮 商务咨询 | 请通过官网"联系我们"提交需求，或在本仓库提 [Issue](https://github.com/jianggong95-netizen/HIS-yiyuan-hospital/issues/new?template=feature_request.yml) |
 | 🤝 渠道 / 代理 | 欢迎区域集成商、医疗信息化服务商洽谈合作 |
 | 💼 人才招聘 | 研发、实施、售前岗位长期开放，简历请走官网投递 |
 
-> 需要在贵院做 **POC 演示 / 方案汇报 / 参观样板医院**，可在 Issue 中留下单位与联系方式，我们会安排属地团队对接。
+> 需要在贵院做 **POC 演示 / 方案汇报 / 参观样板医院**，可在 Issue 中留下单位与联系方式，我们会安排属地团队对接；也可以直接访问 [www.cnhis.com](https://www.cnhis.com) 在线咨询。
 
 ## ⚖️ 许可与版权
 

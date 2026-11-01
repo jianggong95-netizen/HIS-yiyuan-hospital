@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="756" viewBox="0 0 1280 756" role="img" aria-label="HIS-yiyuan-hospital 能力全景：六大能力域与统一中台底座">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7FBFF"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F9FF"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B2A5B"/>
+      <stop offset="60%" stop-color="#154C9E"/>
+      <stop offset="100%" stop-color="#1F6FEB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="756" rx="18" fill="url(#wash)"/>
+  <rect x="0.5" y="0.5" width="1279" height="755" rx="18" fill="none" stroke="#E1EBF7"/>
+  <text x="64" y="72" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#2E7CF6" letter-spacing="3">CAPABILITY LANDSCAPE</text>
+  <text x="64" y="120" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="40" font-weight="700" fill="#0B2A5B">能力全景</text>
+  <text x="64" y="152" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="18" fill="#63798F">6 大能力域 · 120+ 微服务应用 · 一套中台底座</text>
+  <g text-anchor="end">
+    <text x="1216" y="118" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#63798F">门急诊 · 住院 · 医技 · 运营 · 互联网</text>
+    <text x="1216" y="146" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#63798F">按科室 / 院区 / 业务域分批上线，不停机切换</text>
+  </g>
+  <g>
+    <rect x="64" y="176" width="368" height="202" rx="16" fill="#FFFFFF" stroke="#E5EEF9"/>
+    <rect x="64" y="192" width="4" height="30" rx="2" fill="#1F6FEB"/>
+    <text x="92" y="214" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#16324F">临床医疗</text>
+    <text x="412" y="212" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#1F6FEB" letter-spacing="1.4" fill-opacity="0.75">CLINICAL</text>
+    <rect x="84" y="254" width="116" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="142" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">门急诊医生站</text>
+    <rect x="208" y="254" width="101" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="258.5" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">住院医生站</text>
+    <rect x="317" y="254" width="71" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="352.5" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">护理站</text>
+    <rect x="84" y="292" width="120" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="144" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">电子病历 EMR</text>
+    <rect x="212" y="292" width="86" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="255" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">临床路径</text>
+    <rect x="306" y="292" width="86" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="349" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">医嘱闭环</text>
+    <rect x="84" y="330" width="86" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="127" y="350" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">手术麻醉</text>
+    <rect x="178" y="330" width="86" height="30" rx="15" fill="#1F6FEB" fill-opacity="0.07" stroke="#1F6FEB" stroke-opacity="0.22"/>
+    <text x="221" y="350" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#14509E">急诊分诊</text>
+  </g>
+  <g>
+    <rect x="456" y="176" width="368" height="202" rx="16" fill="#FFFFFF" stroke="#E5EEF9"/>
+    <rect x="456" y="192" width="4" height="30" rx="2" fill="#0E9F6E"/>
+    <text x="484" y="214" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#16324F">医技与影像</text>
+    <text x="804" y="212" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#0E9F6E" letter-spacing="1.4" fill-opacity="0.75">DIAGNOSTICS</text>
+    <rect x="476" y="254" width="55" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="503.5" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">LIS</text>
+    <rect x="539" y="254" width="65" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="571.5" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">PACS</text>
+    <rect x="612" y="254" width="86" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="655" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">心电网络</text>
+    <rect x="476" y="292" width="86" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="519" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">超声内镜</text>
+    <rect x="570" y="292" width="56" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="598" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">病理</text>
+    <rect x="634" y="292" width="86" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="677" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">输血管理</text>
+    <rect x="476" y="330" width="86" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="519" y="350" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">静配中心</text>
+    <rect x="570" y="330" width="86" height="30" rx="15" fill="#0E9F6E" fill-opacity="0.07" stroke="#0E9F6E" stroke-opacity="0.22"/>
+    <text x="613" y="350" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0A7A55">健康体检</text>
+  </g>
+  <g>
+    <rect x="848" y="176" width="368" height="202" rx="16" fill="#FFFFFF" stroke="#E5EEF9"/>
+    <rect x="848" y="192" width="4" height="30" rx="2" fill="#B45309"/>
+    <text x="876" y="214" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#16324F">药品与安全</text>
+    <text x="1196" y="212" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#B45309" letter-spacing="1.4" fill-opacity="0.75">MEDICATION &amp; SAFETY</text>
+    <rect x="868" y="254" width="86" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="911" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">合理用药</text>
+    <rect x="962" y="254" width="86" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="1005" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">处方点评</text>
+    <rect x="1056" y="254" width="86" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="1099" y="274" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">事前审方</text>
+    <rect x="868" y="292" width="129" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="932.5" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">CDSS 辅助决策</text>
+    <rect x="1005" y="292" width="71" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="1040.5" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">危急值</text>
+    <rect x="1084" y="292" width="86" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="1127" y="312" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">不良事件</text>
+    <rect x="868" y="330" width="86" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="911" y="350" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">院感管理</text>
+    <rect x="962" y="330" width="86" height="30" rx="15" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-opacity="0.22"/>
+    <text x="1005" y="350" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#8A3F07">病历质控</text>
+  </g>
+  <g>
+    <rect x="64" y="402" width="368" height="202" rx="16" fill="#FFFFFF" stroke="#E5EEF9"/>
+    <rect x="64" y="418" width="4" height="30" rx="2" fill="#6D28D9"/>
+    <text x="92" y="440" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#16324F">运营管理</text>
+    <text x="412" y="438" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#6D28D9" letter-spacing="1.4" fill-opacity="0.75">OPERATIONS</text>
+    <rect x="84" y="480" width="86" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="127" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">挂号收费</text>
+    <rect x="178" y="480" width="86" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="221" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">病案管理</text>
+    <rect x="272" y="480" width="99" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="321.5" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">DRG / DIP</text>
+    <rect x="84" y="518" width="86" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="127" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">绩效考核</text>
+    <rect x="178" y="518" width="101" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="228.5" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">物资供应链</text>
+    <rect x="287" y="518" width="86" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="330" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">设备管理</text>
+    <rect x="84" y="556" width="86" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="127" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">排班调度</text>
+    <rect x="178" y="556" width="101" height="30" rx="15" fill="#6D28D9" fill-opacity="0.07" stroke="#6D28D9" stroke-opacity="0.22"/>
+    <text x="228.5" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#5520AC">院长驾驶舱</text>
+  </g>
+  <g>
+    <rect x="456" y="402" width="368" height="202" rx="16" fill="#FFFFFF" stroke="#E5EEF9"/>
+    <rect x="456" y="418" width="4" height="30" rx="2" fill="#BE185D"/>
+    <text x="484" y="440" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#16324F">患者服务</text>
+    <text x="804" y="438" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#BE185D" letter-spacing="1.4" fill-opacity="0.75">PATIENT SERVICES</text>
+    <rect x="476" y="480" width="101" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="526.5" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">互联网医院</text>
+    <rect x="585" y="480" width="86" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="628" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">预约挂号</text>
+    <rect x="679" y="480" width="86" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="722" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">排队叫号</text>
+    <rect x="476" y="518" width="87" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="519.5" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">患者 360</text>
+    <rect x="571" y="518" width="86" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="614" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">随访管理</text>
+    <rect x="665" y="518" width="86" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="708" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">慢病管理</text>
+    <rect x="476" y="556" width="132" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="542" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">智慧医院 · 微信</text>
+    <rect x="616" y="556" width="86" height="30" rx="15" fill="#BE185D" fill-opacity="0.07" stroke="#BE185D" stroke-opacity="0.22"/>
+    <text x="659" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#961344">在线支付</text>
+  </g>
+  <g>
+    <rect x="848" y="402" width="368" height="202" rx="16" fill="#FFFFFF" stroke="#E5EEF9"/>
+    <rect x="848" y="418" width="4" height="30" rx="2" fill="#0E7490"/>
+    <text x="876" y="440" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#16324F">中台与平台</text>
+    <text x="1196" y="438" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#0E7490" letter-spacing="1.4" fill-opacity="0.75">PLATFORM</text>
+    <rect x="868" y="480" width="144" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="940" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">EMPI 患者主索引</text>
+    <rect x="1020" y="480" width="120" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="1080" y="500" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">CDR 临床数据</text>
+    <rect x="868" y="518" width="71" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="903.5" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">主数据</text>
+    <rect x="947" y="518" width="86" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="990" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">集成引擎</text>
+    <rect x="1041" y="518" width="86" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="1084" y="538" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">规则引擎</text>
+    <rect x="868" y="556" width="86" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="911" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">统一调度</text>
+    <rect x="962" y="556" width="80" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="1002" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">医疗 BI</text>
+    <rect x="1050" y="556" width="80" height="30" rx="15" fill="#0E7490" fill-opacity="0.07" stroke="#0E7490" stroke-opacity="0.22"/>
+    <text x="1090" y="576" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#0B5A70">AI 辅助</text>
+  </g>
+  <g>
+    <rect x="64" y="632" width="1152" height="76" rx="16" fill="url(#band)"/>
+    <text x="92" y="663" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">统一中台底座</text>
+    <text x="92" y="687" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="13.5" fill="#BBD5F5">私有化 / 专有云部署　·　信创全栈适配　·　等保合规方案　·　7×24 驻点 + 远程</text>
+    <text x="1188" y="676" text-anchor="end" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#E8F2FF" letter-spacing="0.4">www.cnhis.com</text>
+  </g>
+</svg>

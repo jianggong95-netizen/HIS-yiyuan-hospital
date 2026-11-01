@@ -1,6 +1,7 @@
 # 开放接口说明
 
-演示网关前缀：`http://localhost:8787/api/v1`
+演示网关前缀：`http://localhost:8787/api/v1`（本地仓库自带，起服务即用）
+在线体验 / 沙箱：<https://www.cnhis.com> 申请开通后分配网关地址与应用凭据
 生产环境：由医院开放平台分配，形如 `https://open.<hospital>.cn/api/v1`
 
 ## 鉴权

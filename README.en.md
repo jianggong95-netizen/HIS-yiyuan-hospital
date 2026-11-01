@@ -48,9 +48,11 @@
 
 Hospitals can roll out microservices **department by department, campus by campus** instead of a multi-month big-bang cutover.
 
+## Capability map
+
 <div align="center">
-  <img src="./assets/ecosystem.png" alt="HIS-yiyuan-hospital application landscape" width="92%" />
-  <sub>Microservice applications covering the full clinical and operational landscape</sub>
+  <img src="./assets/capability-map.svg" alt="HIS-yiyuan-hospital capability map: six capability domains on one middle platform" width="100%" />
+  <sub>Six capability domains · 120+ microservice applications · one middle platform　|　Live demo &amp; sandbox: <b><a href="https://www.cnhis.com">www.cnhis.com</a></b></sub>
 </div>
 
 ## Screens
@@ -268,7 +270,8 @@ npm i @his-yiyuan-hospital/sdk
 import { HisYiyuanHospitalClient } from '@his-yiyuan-hospital/sdk';
 
 const client = new HisYiyuanHospitalClient({
-  baseUrl: 'https://open.example-hospital.cn',
+  // Sandbox / production gateway — requested via www.cnhis.com and issued on onboarding
+  baseUrl: 'https://www.cnhis.com',
   appId: 'demo-app',
   appSecret: process.env.HIS_SECRET!,
 });
@@ -352,11 +355,12 @@ Details: [docs/roadmap.md](./docs/roadmap.md).
 | Channel | Detail |
 |---|---|
 | 🌐 Website | [www.cnhis.com](https://www.cnhis.com) |
+| 🖥 Live demo / sandbox | [www.cnhis.com](https://www.cnhis.com) — request a guided demo or a reference-site visit |
 | 📮 Sales | Submit an enquiry via the website, or open an [issue](https://github.com/jianggong95-netizen/HIS-yiyuan-hospital/issues/new?template=feature_request.yml) |
 | 🤝 Partners | Regional system integrators and healthcare IT providers are welcome |
 | 💼 Careers | Engineering, implementation and pre-sales roles are open year-round |
 
-> Want a **POC demo, a solution briefing, or a reference-site visit**? Leave your organisation and contact in an issue and our regional team will follow up.
+> Want a **POC demo, a solution briefing, or a reference-site visit**? Leave your organisation and contact in an issue and our regional team will follow up — or enquire directly at [www.cnhis.com](https://www.cnhis.com).
 
 ## Licence
 
