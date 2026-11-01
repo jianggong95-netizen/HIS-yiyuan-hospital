@@ -44,7 +44,7 @@
 
 ## 建议反馈
 
-对路线图有优先级建议，欢迎提 [Feature Request](/issues/new?template=feature_request.yml)。
+对路线图有优先级建议，欢迎提 [Feature Request](https://github.com/jianggong95-netizen/ihealthone-os/issues/new?template=feature_request.yml)。
 医院信息科可注明床位数、现有系统构成与最迫切的痛点，我们会纳入评估。
 
 ---

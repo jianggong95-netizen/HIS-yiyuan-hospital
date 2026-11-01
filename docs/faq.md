@@ -82,7 +82,7 @@ netstat -ano | findstr 8787   # Windows
 ## 没找到答案？
 
 - 官网在线咨询：[www.cnhis.com](https://www.cnhis.com)
-- 在本仓库提 [Issue](/issues/new/choose)，注明单位与场景，我们会安排属地团队回复。
+- 在本仓库提 [Issue](https://github.com/jianggong95-netizen/ihealthone-os/issues/new/choose)，注明单位与场景，我们会安排属地团队回复。
 
 ---
 

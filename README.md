@@ -247,8 +247,7 @@ ihealthone-os/
 git clone https://github.com/jianggong95-netizen/ihealthone-os.git
 cd ihealthone-os
 docker compose up -d
-# 打开 http://localhost:8787        → Mock 开放接口
-# 打开 http://localhost:5173        → 患者 360 示例页
+# 打开 http://localhost:8787        → 患者 360 示例页 + Mock 开放接口
 ```
 
 ### 方式二：只用 Node（零依赖）
@@ -353,7 +352,7 @@ npx @ihealthone/cli patient 360 MZ00000143
 | 渠道 | 信息 |
 |---|---|
 | 🌐 官方网站 | [www.cnhis.com](https://www.cnhis.com) |
-| 📮 商务咨询 | 请通过官网"联系我们"提交需求，或在本仓库提 [Issue](/issues/new?template=feature_request.yml) |
+| 📮 商务咨询 | 请通过官网"联系我们"提交需求，或在本仓库提 [Issue](https://github.com/jianggong95-netizen/ihealthone-os/issues/new?template=feature_request.yml) |
 | 🤝 渠道 / 代理 | 欢迎区域集成商、医疗信息化服务商洽谈合作 |
 | 💼 人才招聘 | 研发、实施、售前岗位长期开放，简历请走官网投递 |
 

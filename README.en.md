@@ -352,7 +352,7 @@ Details: [docs/roadmap.md](./docs/roadmap.md).
 | Channel | Detail |
 |---|---|
 | 🌐 Website | [www.cnhis.com](https://www.cnhis.com) |
-| 📮 Sales | Submit an enquiry via the website, or open an [issue](/issues/new?template=feature_request.yml) |
+| 📮 Sales | Submit an enquiry via the website, or open an [issue](https://github.com/jianggong95-netizen/ihealthone-os/issues/new?template=feature_request.yml) |
 | 🤝 Partners | Regional system integrators and healthcare IT providers are welcome |
 | 💼 Careers | Engineering, implementation and pre-sales roles are open year-round |
 
